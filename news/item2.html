@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/tipuesearch.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/tipuedrop.css">
+    <script type="text/javascript" src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resource/js/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="../resource/js/tipuesearch_content.js"></script>
+    <script type="text/javascript" src="../resource/js/tipuesearch.min.js"></script>
+    <script type="text/javascript" src="../resource/js/tipuedrop.min.js"></script>
+  </head>
+  <body class="silk-template-default silk-view-news">
+    
+    <div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">
+    <span>
+      Blog Blog Blog
+    </span>
+  
+
+</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          
+    <ul class="nav navbar-nav">
+      <li>
+        <a data-sw-href="path" href="../index.html">
+          <span data-sw-text="title">Home</span>
+        </a>
+      </li>
+    </ul>
+  
+
+
+          <div class="pull-right">
+            <form action="../search.html" class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required="">
+              </div>
+              <button type="submit" class="btn btn-default" alt="Search" title="Search">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+            <div style="margin-top:45px" id="tipue_drop_content"></div>
+            <script>
+              $(document).ready(function() {
+                 $('#tipue_search_input').tipuedrop();
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <br><br><br>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>
+    <span>
+      Blog Blog Blog
+    </span>
+  
+
+</h1>
+      </div>
+      
+  
+    <div class="row">
+      <div class="col-md-9">
+        <h2 data-sw-text="title">Lorem ipsum 2</h2>
+        <div content="" data-sw-text="body-html" data-sw-content=""><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<blockquote>
+<p>This is a test</p>
+</blockquote>
+
+<p>This is another test</p>
+
+<p> </p>
+</div>
+        <span style="display:none;" id="sw_disqus_article_id" data-sw-text="sw/name">item2.edn</span>
+        <span style="display:none;" id="sw_disqus_title" data-sw-text="title">Lorem ipsum 2</span>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var fname = document.getElementById("sw_disqus_article_id").innerHTML;
+          var disqus_shortname = 'silk-examples-blog';
+          var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
+          var disqus_title =  document.getElementById("sw_disqus_title").innerHTML;
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  
+
+
+
+
+
+      
+    <hr>
+    <footer>
+      <div class="pull-right">
+        <img src="../resource/img/spun-with-silk.png" alt="spun with Silk">
+      </div>
+    </footer>
+  
+
+
+    </div>
+  
+
+</body></html>

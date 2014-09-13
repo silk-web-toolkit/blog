@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="resource/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/tipuesearch.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/tipuedrop.css">
+    <script type="text/javascript" src="resource/js/jquery.min.js"></script>
+    <script type="text/javascript" src="resource/js/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="resource/js/tipuesearch_content.js"></script>
+    <script type="text/javascript" src="resource/js/tipuesearch.min.js"></script>
+    <script type="text/javascript" src="resource/js/tipuedrop.min.js"></script>
+  </head>
+  <body class="silk-template-default silk-view-index">
+    
+    <div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+    <span>
+      Blog Blog Blog
+    </span>
+  
+
+</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          
+    <ul class="nav navbar-nav">
+      <li>
+        <a data-sw-href="path" href="index.html">
+          <span data-sw-text="title">Home</span>
+        </a>
+      </li>
+    </ul>
+  
+
+
+          <div class="pull-right">
+            <form action="search.html" class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required="">
+              </div>
+              <button type="submit" class="btn btn-default" alt="Search" title="Search">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+            <div style="margin-top:45px" id="tipue_drop_content"></div>
+            <script>
+              $(document).ready(function() {
+                 $('#tipue_search_input').tipuedrop();
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <br><br><br>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>
+    <span>
+      Blog Blog Blog
+    </span>
+  
+
+</h1>
+      </div>
+      
+    <div class="row">
+      <div class="col-md-9">
+        
+    <ul class="list-group">
+      <li style="list-style:none;">
+        <a class="list-group-item" data-sw-href="sw/path" href="news/item1.html">
+          <h3 data-sw-text="title">Apollo 11</h3>
+          <div data-sw-text="summary-html"><table width="100%">
+<tbody>
+<tr>
+<td>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p> </p>
+</td>
+<td><img src="resource/img/car.png" alt=""></td>
+</tr>
+</tbody>
+</table></div>
+        </a>
+        <div class="footer">
+          <span data-sw-text="author">Schnick</span>
+          <!-- <span data-sw-text="published-date">placeholder for published-date</span> -->
+          <a data-disqus-identifier="item1.edn" class="pull-right" data-sw-data-disqus-identifier="sw/name" data-sw-href="sw/path#disqus_thread" href="news/item1.html#disqus_thread">
+            Comments
+          </a>
+        </div>
+      </li><li style="list-style:none;">
+        <a class="list-group-item" data-sw-href="sw/path" href="news/item2.html">
+          <h3 data-sw-text="title">Lorem ipsum 2</h3>
+          <div data-sw-text="summary-html"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+        </a>
+        <div class="footer">
+          <span data-sw-text="author">Schnick</span>
+          <!-- <span data-sw-text="published-date">placeholder for published-date</span> -->
+          <a data-disqus-identifier="item2.edn" class="pull-right" data-sw-data-disqus-identifier="sw/name" data-sw-href="sw/path#disqus_thread" href="news/item2.html#disqus_thread">
+            Comments
+          </a>
+        </div>
+      </li><li style="list-style:none;">
+        <a class="list-group-item" data-sw-href="sw/path" href="news/item3.html">
+          <h3 data-sw-text="title">Dark Knight</h3>
+          <div data-sw-text="summary-html"><p>When Batman, Gordon and Harvey Dent launch an assault on the mob, they let the clown out of the box, the Joker, bent on turning Gotham on itself and bringing any heroes down to his level.</p></div>
+        </a>
+        <div class="footer">
+          <span data-sw-text="author">Schnick</span>
+          <!-- <span data-sw-text="published-date">placeholder for published-date</span> -->
+          <a data-disqus-identifier="item3.edn" class="pull-right" data-sw-data-disqus-identifier="sw/name" data-sw-href="sw/path#disqus_thread" href="news/item3.html#disqus_thread">
+            Comments
+          </a>
+        </div>
+      </li>
+    </ul>
+  
+
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'silk-examples-blog'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  
+
+
+      
+    <hr>
+    <footer>
+      <div class="pull-right">
+        <img src="resource/img/spun-with-silk.png" alt="spun with Silk">
+      </div>
+    </footer>
+  
+
+
+    </div>
+  
+
+</body></html>
