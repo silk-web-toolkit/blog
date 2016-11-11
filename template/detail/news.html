@@ -1,5 +1,26 @@
 <html>
 <body>
-  <div data-sw-component="detail/body">Placeholder for component</div>
+  <div class="row">
+    <div class="col-md-9">
+      <h2 data-sw-text="title">placeholder for title</h2>
+      <div data-sw-text="body-html" data-sw-content>placeholder for body-html</div>
+      <input id="sw_disqus_article_id" type="hidden" data-sw-value="sw/name" />
+      <input id="sw_disqus_title"      type="hidden" data-sw-value="title"   />
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var fname = document.getElementById("sw_disqus_article_id").value;
+        var disqus_shortname = 'silk-examples-blog';
+        var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
+        var disqus_title =  document.getElementById("sw_disqus_title").value;
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
 </body>
 </html>
