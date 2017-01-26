@@ -13,9 +13,8 @@
     <script type="text/javascript" src="../resource/js/tipuesearch.min.js"></script>
     <script type="text/javascript" src="../resource/js/tipuedrop.min.js"></script>
   </head>
-  <body class="silk-template-default silk-view-news">
-    
-    <div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
+  <body>
+    <div><div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,26 +22,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">
-    <span>
+          <a class="navbar-brand" href="../index.html"><span><span>
       Blog Blog Blog
-    </span>
-  
-
-</a>
+    </span></span></a>
         </div>
         <div class="collapse navbar-collapse">
-          
-    <ul class="nav navbar-nav">
+          <div><ul class="nav navbar-nav">
       <li>
-        <a data-sw-href="path" href="../index.html">
-          <span data-sw-text="title">Home</span>
+        <a href="../index.html">
+          <span>Home</span>
         </a>
       </li>
-    </ul>
-  
-
-
+    </ul></div>
           <div class="pull-right">
             <form action="../search.html" class="navbar-form navbar-left" role="search">
               <div class="form-group">
@@ -61,27 +52,18 @@
           </div>
         </div>
       </div>
-    </div>
-  
-
-
+    </div></div>
     <br><br><br>
     <div class="container">
       <div class="jumbotron">
-        <h1>
-    <span>
+        <h1><span><span>
       Blog Blog Blog
-    </span>
-  
-
-</h1>
+    </span></span></h1>
       </div>
-      
-  
-    <div class="row">
-      <div class="col-md-9">
-        <h2 data-sw-text="title">Apollo 11</h2>
-        <div content="" data-sw-text="body-html" data-sw-content=""><h1> Apollo 11</h1>
+      <div view=""><div class="row">
+    <div class="col-md-9">
+      <h2>Apollo 11</h2>
+      <div data-sw-content=""><html><head></head><body><h1> Apollo 11</h1>
 <p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="http://en.wikipedia.org/wiki/Neil_Armstrong">Neil Armstrong</a> and <a href="http://en.wikipedia.org/wiki/Buzz_Aldrin">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
 <h1> </h1>
 <p>Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together</p>
@@ -127,41 +109,30 @@
 </ol>
 <p>After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="http://en.wikipedia.org/wiki/Mare_Tranquillitatis">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="http://en.wikipedia.org/wiki/Pacific_Ocean">Pacific Ocean</a> on July 24.</p>
 <hr>
-<p><small>Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a></small></p></div>
-        <span style="display:none;" id="sw_disqus_article_id" data-sw-text="sw/name">apollo-11.edn</span>
-        <span style="display:none;" id="sw_disqus_title" data-sw-text="title">Apollo 11</span>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          var fname = document.getElementById("sw_disqus_article_id").innerHTML;
-          var disqus_shortname = 'silk-examples-blog';
-          var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
-          var disqus_title =  document.getElementById("sw_disqus_title").innerHTML;
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </div>
+<p><small>Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a></small></p></body></html></div>
+      <input id="sw_disqus_article_id" type="hidden" value="apollo-11.edn">
+      <input id="sw_disqus_title" type="hidden" value="Apollo 11">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var fname = document.getElementById("sw_disqus_article_id").value;
+        var disqus_shortname = 'silk-examples-blog';
+        var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
+        var disqus_title =  document.getElementById("sw_disqus_title").value;
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-  
-
-
-
-
-
-      
-    <hr>
-    <footer>
+  </div></div>
+      <div><hr><footer>
       <div class="pull-right">
         <img src="../resource/img/spun-with-silk.png" alt="spun with Silk">
       </div>
-    </footer>
-  
-
-
+    </footer></div>
     </div>
   
 

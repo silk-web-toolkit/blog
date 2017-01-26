@@ -13,9 +13,8 @@
     <script type="text/javascript" src="../resource/js/tipuesearch.min.js"></script>
     <script type="text/javascript" src="../resource/js/tipuedrop.min.js"></script>
   </head>
-  <body class="silk-template-default silk-view-news">
-    
-    <div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
+  <body>
+    <div><div id="navbar-header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,26 +22,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">
-    <span>
+          <a class="navbar-brand" href="../index.html"><span><span>
       Blog Blog Blog
-    </span>
-  
-
-</a>
+    </span></span></a>
         </div>
         <div class="collapse navbar-collapse">
-          
-    <ul class="nav navbar-nav">
+          <div><ul class="nav navbar-nav">
       <li>
-        <a data-sw-href="path" href="../index.html">
-          <span data-sw-text="title">Home</span>
+        <a href="../index.html">
+          <span>Home</span>
         </a>
       </li>
-    </ul>
-  
-
-
+    </ul></div>
           <div class="pull-right">
             <form action="../search.html" class="navbar-form navbar-left" role="search">
               <div class="form-group">
@@ -61,66 +52,46 @@
           </div>
         </div>
       </div>
-    </div>
-  
-
-
+    </div></div>
     <br><br><br>
     <div class="container">
       <div class="jumbotron">
-        <h1>
-    <span>
+        <h1><span><span>
       Blog Blog Blog
-    </span>
-  
-
-</h1>
+    </span></span></h1>
       </div>
-      
-  
-    <div class="row">
-      <div class="col-md-9">
-        <h2 data-sw-text="title">Lorem ipsum 1</h2>
-        <div content="" data-sw-text="body-html" data-sw-content=""><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      <div view=""><div class="row">
+    <div class="col-md-9">
+      <h2>Lorem ipsum 1</h2>
+      <div data-sw-content=""><html><head></head><body><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 <blockquote>
 <p>This is a test</p>
 </blockquote>
 <p>This is another test</p>
-<p> </p></div>
-        <span style="display:none;" id="sw_disqus_article_id" data-sw-text="sw/name">lorem-ipsum-1.edn</span>
-        <span style="display:none;" id="sw_disqus_title" data-sw-text="title">Lorem ipsum 1</span>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          var fname = document.getElementById("sw_disqus_article_id").innerHTML;
-          var disqus_shortname = 'silk-examples-blog';
-          var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
-          var disqus_title =  document.getElementById("sw_disqus_title").innerHTML;
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </div>
+<p> </p></body></html></div>
+      <input id="sw_disqus_article_id" type="hidden" value="lorem-ipsum-1.edn">
+      <input id="sw_disqus_title" type="hidden" value="Lorem ipsum 1">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var fname = document.getElementById("sw_disqus_article_id").value;
+        var disqus_shortname = 'silk-examples-blog';
+        var disqus_identifier = fname.substring(0, fname.lastIndexOf("."));
+        var disqus_title =  document.getElementById("sw_disqus_title").value;
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-  
-
-
-
-
-
-      
-    <hr>
-    <footer>
+  </div></div>
+      <div><hr><footer>
       <div class="pull-right">
         <img src="../resource/img/spun-with-silk.png" alt="spun with Silk">
       </div>
-    </footer>
-  
-
-
+    </footer></div>
     </div>
   
 
